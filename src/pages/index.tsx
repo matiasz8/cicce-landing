@@ -94,22 +94,6 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-
-            <div className="relative">
-              <div className="relative z-10">
-                <div className="w-full h-[600px] bg-gradient-to-br from-blue-100 via-white to-green-100 rounded-2xl shadow-2xl flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-green-600 rounded-full mx-auto flex items-center justify-center">
-                      <BookOpen className="h-12 w-12 text-white" />
-                    </div>
-                    <div className="text-2xl font-bold text-gray-700">Educación en Salud</div>
-                    <div className="text-gray-500">Profesionales del Futuro</div>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-200 to-green-200 rounded-full blur-3xl opacity-30"></div>
-              <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-gradient-to-br from-green-200 to-blue-200 rounded-full blur-3xl opacity-30"></div>
-            </div>
           </div>
         </div>
       </section>
@@ -132,7 +116,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-600 transition-colors">
                   <BookOpen className="h-6 w-6 text-blue-600 group-hover:text-white" />
                 </div>
-                <CardTitle className="text-xl">Medicina Clínica Avanzada</CardTitle>
+                <CardTitle className="text-xl">Capacitación en Diagnósticos</CardTitle>
                 <CardDescription>
                   Programa integral de actualización en diagnóstico y tratamiento de patologías complejas
                 </CardDescription>
@@ -152,8 +136,8 @@ export default function HomePage() {
                     Certificación Nacional
                   </div>
                 </div>
-                <Button className="w-full" variant="outline">
-                  Más Información
+                <Button className="w-full" variant="outline" disabled>
+                  Próximamente
                 </Button>
               </CardContent>
             </Card>
@@ -163,7 +147,7 @@ export default function HomePage() {
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-600 transition-colors">
                   <Users className="h-6 w-6 text-green-600 group-hover:text-white" />
                 </div>
-                <CardTitle className="text-xl">Gestión Hospitalaria</CardTitle>
+                <CardTitle className="text-xl">Enfermería Laboral</CardTitle>
                 <CardDescription>
                   Especialización en administración y gestión de instituciones de salud modernas
                 </CardDescription>
@@ -172,20 +156,27 @@ export default function HomePage() {
                 <div className="space-y-2">
                   <div className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Duración: 8 meses
+                    Duración: 120 horas
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                    Modalidad: Online
+                    Modalidad: Virtual con seminarios presenciales
                   </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
                     Prácticas Incluidas
                   </div>
+                  <div className="flex items-center text-sm text-gray-600">
+                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    Certificación al finalizar
+                  </div>
+                  <br />
                 </div>
-                <Button className="w-full" variant="outline">
-                  Más Información
-                </Button>
+                <Link href="/#enfermeria-laboral">
+                  <Button className="w-full" variant="outline">
+                    Más Información
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -214,8 +205,8 @@ export default function HomePage() {
                     Proyecto Final
                   </div>
                 </div>
-                <Button className="w-full" variant="outline">
-                  Más Información
+                <Button className="w-full" variant="outline" disabled>
+                  Próximamente
                 </Button>
               </CardContent>
             </Card>
@@ -230,11 +221,30 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">Sobre CICCE</Badge>
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Líderes en educación médica continua</h2>
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Nuestro Equipo</h2>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Con más de 15 años de experiencia, CICCE se ha consolidado como el centro de referencia para la
                   formación de profesionales de la salud en América Latina. Nuestro compromiso con la excelencia
                   académica y la innovación educativa nos distingue.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Curso: Enfermería Laboral */}
+      <section id="enfermeria-laboral" className="py-20 bg-gray-50">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <Badge className="bg-green-100 text-green-700 hover:bg-green-100">Cursos</Badge>
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">Enfermería Laboral</h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Formación especializada para desempeñarte en el ámbito de la salud ocupacional.
+                  Adquirí herramientas clave en prevención, normativa legal y
+                  asistencia integral en entornos laborales.
                 </p>
               </div>
 
@@ -244,8 +254,8 @@ export default function HomePage() {
                     <CheckCircle className="h-4 w-4 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Acreditación Nacional</h3>
-                    <p className="text-gray-600">Certificados reconocidos por organismos nacionales de salud</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Modalidad Híbrida</h3>
+                    <p className="text-gray-600">Modalidad Virtual con seminarios presenciales</p>
                   </div>
                 </div>
 
@@ -255,7 +265,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Metodología Innovadora</h3>
-                    <p className="text-gray-600">Combinamos teoría y práctica con tecnología de vanguardia</p>
+                    <p className="text-gray-600">Combinamos un material actualizado y certificación oficial</p>
                   </div>
                 </div>
 
@@ -265,7 +275,8 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Red de Expertos</h3>
-                    <p className="text-gray-600">Docentes especializados con amplia experiencia clínica</p>
+                    <p className="text-gray-600">Docentes especializados con amplia experiencia clínica.</p>
+                      <p className="text-gray-600">Clases en vivo con especialistas en salud laboral.</p>
                   </div>
                 </div>
               </div>
@@ -274,22 +285,14 @@ export default function HomePage() {
             <div className="relative">
               <div className="w-full h-[500px] bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl shadow-xl flex items-center justify-center">
                 <div className="text-center space-y-6">
+
                   <div className="flex justify-center space-x-4">
-                    <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center">
-                      <Users className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
-                      <BookOpen className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center">
-                      <Award className="h-8 w-8 text-white" />
-                    </div>
                   </div>
                   <div className="text-2xl font-bold text-gray-700">Equipo CICCE</div>
                   <div className="text-gray-500">Excelencia en Educación Médica</div>
                 </div>
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+              {/* <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-green-600 rounded-full flex items-center justify-center">
                     <Award className="h-6 w-6 text-white" />
@@ -299,14 +302,15 @@ export default function HomePage() {
                     <div className="text-sm text-gray-600">Educación Médica 2023</div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </section>
 
+
       {/* Testimonials Section */}
-      <section id="testimonios" className="py-20 bg-gray-50">
+      <section id="testimonios" className="py-20 ">
         <div className="container">
           <div className="text-center space-y-4 mb-16">
             <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100">Testimonios</Badge>
@@ -322,7 +326,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gray-600 italic">
-                  "El programa de Medicina Clínica Avanzada transformó mi práctica profesional. Los conocimientos
+                  "El programa de Capacitación en Diagnósticos transformó mi práctica profesional. Los conocimientos
                   adquiridos me han permitido brindar mejor atención a mis pacientes."
                 </p>
                 <div className="flex items-center space-x-3">
@@ -449,16 +453,6 @@ export default function HomePage() {
                     <div className="text-gray-600">info@cicce.edu</div>
                   </div>
                 </div>
-
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <MapPin className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-gray-900">Dirección</div>
-                    <div className="text-gray-600">Av. Hipólito Yrigoyen 123, CABA</div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -500,9 +494,9 @@ export default function HomePage() {
                   <label className="text-sm font-medium text-gray-700">Programa de Interés</label>
                   <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option>Selecciona un programa</option>
-                    <option>Medicina Clínica Avanzada</option>
-                    <option>Gestión Hospitalaria</option>
-                    <option>Investigación Clínica</option>
+                    <option>Enfermería Laboral</option>
+                    <option disabled>Capacitación en Diagnósticos</option>
+                    <option disabled>Investigación Clínica</option>
                   </select>
                 </div>
 
@@ -537,86 +531,7 @@ export default function HomePage() {
                 Centro de referencia en educación continua para profesionales de la salud.
               </p>
             </div>
-
-            <div className="space-y-4">
-              <h3 className="font-semibold">Programas</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Medicina Clínica
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Gestión Hospitalaria
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Investigación
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Especialidades
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="font-semibold">Institución</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Sobre Nosotros
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Docentes
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Acreditaciones
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Noticias
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="font-semibold">Soporte</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Centro de Ayuda
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Contacto
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Términos
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-white transition-colors">
-                    Privacidad
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
-
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
             <p>&copy; 2025 CICCE. Todos los derechos reservados.</p>
           </div>

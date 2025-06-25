@@ -246,7 +246,37 @@ export default function HomePage() {
                   Adquirí herramientas clave en prevención, normativa legal y
                   asistencia integral en entornos laborales.
                 </p>
+
+                <ul className="text-base text-gray-700 space-y-2">
+                  <li>📘 <strong>Duración:</strong> 120 horas</li>
+                  <li>🌐 <strong>Modalidad:</strong> Virtual con seminarios presenciales</li>
+                  <li>🎯 <strong>Objetivos:</strong></li>
+                  <ul className="ml-6 list-disc space-y-1">
+                    <li>Comprender el rol profesional en contextos laborales.</li>
+                    <li>Identificar y gestionar riesgos en el ambiente de trabajo.</li>
+                    <li>Manejar normativas legales, informes técnicos y emergencias.</li>
+                  </ul>
+                </ul>
               </div>
+
+              {/* Acordeón con contenido programático */}
+              <div className="mt-8">
+                <details className="bg-white shadow-md p-6 rounded-lg">
+                  <summary className="cursor-pointer font-semibold text-blue-600">
+                    Ver contenido del programa
+                  </summary>
+                  <ul className="mt-4 list-disc space-y-2 ml-6 text-gray-700">
+                    <li><strong>Unidad I:</strong> Fundamentos de la Enfermería Laboral</li>
+                    <li><strong>Unidad II:</strong> Legislación Laboral en Enfermería</li>
+                    <li><strong>Unidad III:</strong> Prevención y Gestión de Riesgos Laborales</li>
+                    <li><strong>Unidad IV:</strong> Emergencias y Primeros Auxilios en el Trabajo</li>
+                    <li><strong>Unidad V:</strong> Patologías y Urgencias Laborales</li>
+                  </ul>
+                </details>
+              </div> 
+            </div>
+
+            <div className="relative">
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -265,7 +295,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Metodología Innovadora</h3>
-                    <p className="text-gray-600">Combinamos un material actualizado y certificación oficial</p>
+                    <p className="text-gray-600">Combinamos material actualizado, estudio de casos y certificación oficial.</p>
                   </div>
                 </div>
 
@@ -276,37 +306,34 @@ export default function HomePage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Red de Expertos</h3>
                     <p className="text-gray-600">Docentes especializados con amplia experiencia clínica.</p>
-                      <p className="text-gray-600">Clases en vivo con especialistas en salud laboral.</p>
+                    <p className="text-gray-600">Clases en vivo con especialistas en salud laboral.</p>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="relative">
-              <div className="w-full h-[500px] bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl shadow-xl flex items-center justify-center">
-                <div className="text-center space-y-6">
-
-                  <div className="flex justify-center space-x-4">
-                  </div>
-                  <div className="text-2xl font-bold text-gray-700">Equipo CICCE</div>
-                  <div className="text-gray-500">Excelencia en Educación Médica</div>
-                </div>
-              </div>
-              {/* <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-green-600 rounded-full flex items-center justify-center">
-                    <Award className="h-6 w-6 text-white" />
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-yellow-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle className="h-4 w-4 text-yellow-600" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">Premio Excelencia</div>
-                    <div className="text-sm text-gray-600">Educación Médica 2023</div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Metodología Activa</h3>
+                    <p className="text-gray-600">Clases teóricas, talleres prácticos, estudio de casos y trabajo final integrador.</p>
                   </div>
                 </div>
-              </div> */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="#contacto">
+                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                      Incribirse Ahora
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
       </section>
+
 
 
       {/* Testimonials Section */}

@@ -54,14 +54,14 @@ export default function HomePage() {
               <div className="space-y-4">
                 <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100">Educación en Salud de Excelencia</Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Formamos profesionales de la{" "}
+                  Capacitamos profesionales de la{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-600">
                     salud del futuro
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  CICCE es tu centro de referencia para la educación continua en ciencias de la salud. Ofrecemos
-                  programas innovadores y certificaciones reconocidas nacionalmente.
+                  CICCE es tu centro de referencia para la capacitación continua
+                  en ciencias de la salud vinculadas al cuidado de las personas.
                 </p>
               </div>
 
@@ -90,7 +90,7 @@ export default function HomePage() {
                 </div>
                 <div className="text-center">
                   {/* <div className="text-2xl font-bold text-gray-900">98%</div> */}
-                  <div className="text-sm text-gray-600">Satisfacción</div>
+                  {/* <div className="text-sm text-gray-600">Satisfacción</div> */}
                 </div>
               </div>
             </div>
